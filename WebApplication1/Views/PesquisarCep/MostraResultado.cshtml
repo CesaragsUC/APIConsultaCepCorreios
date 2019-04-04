@@ -1,0 +1,72 @@
+﻿@model WebApplication1.Models.Dados
+
+@{
+    ViewData["Title"] = "MostraResultado";
+}
+
+<h2>MostraResultado</h2>
+
+<div>
+    <h4>Dados</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cep)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.cep)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.logradouro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.logradouro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.complemento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.complemento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.bairro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.bairro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.localidade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.localidade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.uf)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.uf)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.unidade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.unidade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ibge)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ibge)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.gia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.gia)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
